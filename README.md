@@ -1,1 +1,1 @@
-# CS010-Labs
+# CS010-Labs (Fall 2019)
