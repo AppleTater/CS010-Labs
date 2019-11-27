@@ -9,3 +9,42 @@ You can assume that the list of integers will have at least 2 values.
 To achieve the above, first read the integers into a vector.
 
 Hint: Make sure to initialize the second smallest and smallest integers properly.
+
+
+----BEGIN HERE----
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+   int size = 0;
+   cin >> size;
+   
+   vector<int> numList(size);
+   
+   for (unsigned int i = 0; i < numList.size(); i++) {
+      cin >> numList.at(i);
+   }
+
+   int babey = numList.at(0);
+   for (unsigned int i = 0; i < numList.size(); i++) {
+      if(babey > numList.at(i)) {
+         babey = numList.at(i);
+         numList.at(0) = babey; 
+      }
+   }
+   
+   
+   
+   int small = numList.at(1);
+   for (unsigned int i = 1; i < numList.size(); i++) {
+      if (numList.at(i) > babey && numList.at(i) < small) {
+      small = numList.at(i);
+      }
+   }
+
+   cout << babey << " " << small << endl;
+   
+
+   return 0;
+}
