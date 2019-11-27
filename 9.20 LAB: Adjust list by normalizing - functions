@@ -10,7 +10,6 @@ Ex: If the input is 5 30 50 10 70 65, the output is:
 For coding simplicity, follow every output value by a space, even the last one.
 
 Your program must define and use the following function:
-
 int GetMinimumInt(vector<int> listInts)
 
 -------BEGINS HERE-------
