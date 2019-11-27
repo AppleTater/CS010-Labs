@@ -12,7 +12,7 @@ For coding simplicity, follow every output value by a space, even the last one.
 Your program must define and use the following function:
 int GetMinimumInt(vector<int> listInts)
 
--------BEGINS HERE-------
+------BEGIN HERE------
 #include <iostream>
 #include <vector> 
 using namespace std;
